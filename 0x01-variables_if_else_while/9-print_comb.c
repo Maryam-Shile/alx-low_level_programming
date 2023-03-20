@@ -2,7 +2,7 @@
 
 /**
  * main - the main function of the program
- * Description: prints numbers in base 16 in
+ * Description: prints numbers in base 10 in
  * lowercase with while loop and putchar function
  * Return: return 0 when successful
  */
@@ -10,7 +10,6 @@
 int main(void)
 {
 	int num;
-	char letters;
 
 	num = 0;
 	while (num < 10)
