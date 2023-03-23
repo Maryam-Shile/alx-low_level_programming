@@ -2,7 +2,6 @@
 
 /**
 * main - causes an infinite loop
-* Description: program cancels infinite loop
 * Return: 0
 */
 
