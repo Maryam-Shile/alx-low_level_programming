@@ -2,9 +2,10 @@
 #include "main.h"
 
 /**
- * _strcat - appends strings to strings
+ * _strncat - appends strings to strings
  * @dest: pointer variable
  * @src: pointer variable
+ * @n: integer variable
  * Return: always 0
  */
 
