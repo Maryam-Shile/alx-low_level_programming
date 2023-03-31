@@ -20,16 +20,19 @@ char *cap_string(char *s)
 		{
 			for (k = 97; k <= 122; k++)
 			{
-				if (s[i] == sep[j])
+				if (s[0] == k)
 				{
-					if (s[i + 1] == k)
-					{
-						s[i + 1] = k - 32;
-					}
+					s[0] = k - 32;
 				}
+					if (s[i] == sep[j])
+					{
+						if (s[i + 1] == k)
+						{
+							s[i + 1] = k - 32;
+						}
+					}
 			}
 		}
 	}
 	return (s);
-
 }
