@@ -24,12 +24,9 @@ char *cap_string(char *s)
 				{
 					s[0] = k - 32;
 				}
-					if (s[i] == sep[j])
+					if (s[i] == sep[j] && s[i + 1] == k)
 					{
-						if (s[i + 1] == k)
-						{
-							s[i + 1] = k - 32;
-						}
+						s[i + 1] = k - 32;
 					}
 			}
 		}
