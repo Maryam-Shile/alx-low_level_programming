@@ -2,11 +2,11 @@
 #include "main.h"
 
 /**
- *_memcpy - copies bytes from memory data 
+ *_memcpy - copies bytes from memory data
  *@src: point to source file
  *@dest: pointer to dest file
  *@n: size of n byte
- *@Return: returnds dest pointer
+ *Return: returns dest
  */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
