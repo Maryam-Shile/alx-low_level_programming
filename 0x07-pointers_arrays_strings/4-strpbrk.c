@@ -10,15 +10,15 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-	char *i, *j;
+	char *p, *q;
 
-	for (i = s; *i != '\0'; *i++)
+	for (p = s; *p != '\0'; *p++)
 	{
-		for (j = accept; *j != '\0'; j++)
+		for (q = accept; *q != '\0'; q++)
 		{
-			if (*i == *j)
+			if (*p == *q)
 			{
-				return ((char *)i);
+				return ((char *)p);
 			}
 		}
 	}
