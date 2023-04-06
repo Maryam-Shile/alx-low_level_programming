@@ -2,8 +2,10 @@
 #include "main.h"
 
 /**
- *
- *
+ *_pow_recursion - power recursive function
+ *@x: base number
+ *@y: power number
+ *Return: returns result
  */
 
 int _pow_recursion(int x, int y)
