@@ -4,7 +4,6 @@
 /**
  *_sqrt_recursion - recursively calculates square roots
  *@n: value
- *@i: square value
  *Return: returns square value
  */
 
@@ -12,9 +11,16 @@ int _sqrt_recursion(int n)
 {
 	return (sqrt_helper(n, 1));
 }
+
+/**
+ *sqrt_helper - helper to _sqrt_recursion
+ *@n: value
+ *@i: root
+ *Return: returns sqrt_helper
+ */
 int sqrt_helper(int n, int i)
 {
-	if (i >= n)
+	if (i > n)
 	{
 		return (-1);
 	}
@@ -26,5 +32,5 @@ int sqrt_helper(int n, int i)
 	{
 		return (i);
 	}
-	return (sqrt_helper (n, i + 1));
+	return (sqrt_helper(n, i + 1));
 }
