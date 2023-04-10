@@ -1,5 +1,4 @@
 #!/bin/bash
-
 gcc -c 0-isupper.c
 gcc -c 0-strcat.c
 gcc -c 1-isdigit.c
