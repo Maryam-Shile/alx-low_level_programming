@@ -29,22 +29,28 @@ int _strlen(char *n)
 
 char *str_concat(char *s1, char *s2)
 {
-	int len1, len2, i = 0, j = 0;
+	int len1 = 0, len2 = 0, i = 0, j = 0;
 	char *arr;
 
-	len1 = _strlen(s1);
-	len2 = _strlen(s2);
+	if (s1 != NULL)
+	{
+		len1 = _strlen(s1);
+	}
+	if (s2 != NULL)
+	{
+		len2 = _strlen(s2);
+	}
 	arr = (char *)malloc((len1 + len2 + 1) * sizeof(char));
 	if (arr == NULL)
 	{
 		return (NULL);
 	}
-	while (s1[i] < len1)
+	while (s1[i] != '\0')
 	{
 		arr[i] = s1[i];
 		i++;
 	}
-	while (s2[j] < len2)
+	while (s2[j] != '\0')
 	{
 		arr[i] = s2[j];
 		i++;
