@@ -17,8 +17,8 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL || s2 == NULL)
 	{
-		s1 = '\0';
-		s2 = '\0';
+		s1 = "";
+		s2 = "";
 	}
 	size1 = strlen(s1);
 	size2 = strlen(s2);
