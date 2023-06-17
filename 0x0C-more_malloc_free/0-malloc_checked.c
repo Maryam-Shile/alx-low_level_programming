@@ -5,18 +5,15 @@
 /**
  * malloc_checked - allocates memory with malloc
  * @b: malloc allocates memory of its size
- * Return: returns nothing
+ * Return: returns pointer
  */
 
 void *malloc_checked(unsigned int b)
 {
-	unsigned int *num;
+	void *num;
 
-	num = malloc(sizeof(unsigned int) * b);
+	num = malloc(b);
 	if (num == NULL)
-	{
 		exit(98);
-		return (NULL);
-	}
-	return ((unsigned int*)num);
+	return (num);
 }
