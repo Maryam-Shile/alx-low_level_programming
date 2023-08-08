@@ -28,7 +28,7 @@ void close_files(int file_src, int file_dest)
  */
 int main(int argc, char *argv[])
 {
-	char buffer[1024];
+	char buff[1024];
 	ssize_t br, bw;
 	int src;
 	int dest;
@@ -52,9 +52,9 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
 	}
-	while ((br = read(src, buffer, sizeof(buffer))) > 0)
+	while ((br = read(src, buff, sizeof(buff))) > 0)
 	{
-		bw = write(dest, buffer, br);
+		bw = write(dest, buff, br);
 		if (bw == -1 || bw != br)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
